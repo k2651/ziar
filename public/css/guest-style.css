@@ -1,0 +1,112 @@
+*{
+    border-radius:0px !important;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* -----------------
+  Smooth Scrolling
+  ------------------*/
+
+body {
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    object-fit: cover;
+    background-size: 100%;
+}
+
+.list-group-item {
+    border: 0px !important;
+}
+
+a.bg-light:hover,
+a.bg-light:focus,
+button.bg-light:hover,
+button.bg-light:focus {
+    background-color: transparent !important;
+}
+
+#side-navbar-animation a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+
+ #side-navbar-animation a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  #side-navbar-animation a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+#sidebar-wrapper {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    margin-left: -250px;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 200px;
+}
+
+
+#page-content-wrapper {
+    min-width: 250px;
+}
+
+.bg-echo-dark{
+    background-color: #282830;
+}
+.page-wrapper {
+    background: #f3f3f5;
+    position: relative;
+    min-height: 100vh;
+    margin-left: 200px;
+}
+
+@media (max-width: 768px) {
+    #page-content-wrapper {
+        margin-top: 45px;
+    }
+    .page-wrapper {
+        margin-left: 0px;
+    }
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #page-content-wrapper {
+        margin-left: 250px;
+        min-width: 0;
+        width: 100%;
+    }
+}

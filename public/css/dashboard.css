@@ -1,0 +1,21 @@
+#plusButton {
+    color: rgba(255,255,255,.5);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#plusButton:focus {
+    outline: none;
+}
+
+.sidebar-dark #plusButton {
+    background-color: #e74a3b;
+}
+
+.sidebar #plusButton {
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
